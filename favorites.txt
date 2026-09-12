@@ -1,0 +1,23 @@
+cat > favorites.txt << 'EOF'
+My Favorite Things
+EOF
+
+git add favorites.txt
+git commit -m "Add favorites.txt with a title"
+git push origin main
+cat >> favorites.txt << 'EOF'
+1. Pizza
+2. Coding at night
+3. Rainy days
+4. Coffee
+6. Sci-fi movies
+8. Video games
+10. Photography
+EOF
+
+git add favorites.txt
+git commit -m "Add list of 10 favorite things"
+git push origin main
+git add favorites.txt
+git commit -m "Remove three items from favorites list"
+git push origin main
